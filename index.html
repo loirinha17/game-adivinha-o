@@ -61,6 +61,7 @@
     
     <button id="BTNAdivinhar"
             onmouseover="escurecerBotao()"
+            onmouseout="voltarCorOriginalBotao()"
             onclick="verificarPalpite()">
             Adivinhar
     </button>
@@ -68,6 +69,13 @@
    </div>
 
     <script>
+      function voltarCorOriginalBotao(){
+        var botao_advinhar = document.getElementById('BTNAdivinhar');
+        botao_advinhar.style.backgroundColor = '#8a0000';
+
+      }
+
+
       function escurecerBotao(){
         var botao_advinhar = document.getElementById('BTNAdivinhar');
         botao_advinhar.style.backgroundColor = '#5727F5';
