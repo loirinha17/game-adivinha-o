@@ -87,7 +87,11 @@
 
       function verificarPalpite(){
        var caixa_texto = document.getElementById('NMPalpite');
-       // alert( caixa_texto.value );
+       var chuteDoJogador = parseInt(caixa_texto.value );
+
+       if(chuteDoJogador === numeroSecreto){
+        alert("Parabéns! Você acertou o número secreto: ");
+       } 
        
        alert(numeroSecreto); 
 
